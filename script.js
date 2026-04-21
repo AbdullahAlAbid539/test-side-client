@@ -24,6 +24,7 @@ document.getElementById('checkBtn').addEventListener('click', function() {
     const passport = document.getElementById('uPassport').value.trim();
     const visa = document.getElementById('uVisaType').value;
 
+
     // Reset error
     errorDisplay.style.display = "none";
 
@@ -50,6 +51,7 @@ document.getElementById('checkBtn').addEventListener('click', function() {
                 document.getElementById('resPassport').innerText = data.passport;
                 document.getElementById('resVisa').innerText = data.visa;
                 document.getElementById('resStatus').innerText = data.status;
+                document.getElementById('resexpiry').innerText=data.expiry;
     
             } else {
                 // ভুল ইনপুটের জন্য স্পেসিফিক মেসেজ

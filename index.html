@@ -101,13 +101,14 @@
             background-color: #e4054c;
             color: white;
             padding: 15px;
-            width: 100%;
+            width: 20%;
             border: none;
             font-size: 18px;
             font-weight: bold;
             cursor: pointer;
             text-transform: uppercase;
             transition: 0.3s;
+            margin-left: 200px;
         }
 
         .check-btn:hover {
@@ -251,7 +252,7 @@
             </div>
             <div class="form-group">
                 <label>Select your nationality as shown on the passport you will be travelling on <span class="required-star">*</span> <span class="question-mark">?</span></label>
-                <select id="uVisaType">
+                <select>
                     <option></option>
                     <option>Australian</option>
                     <option>American</option>
@@ -262,14 +263,27 @@
                     <option>Brazilian</option>
                     <option>Brusia</option>
                 </select>
+                <div class="form-group">
+                    <label>Enter your Registered Gmail <span class="required-star">*</span><span class="question-mark">?</span></label>
+                    <input type="email" id="uEmail">
+                </div>
+                <div class="form-group">
+                    <label>Visa Category</label>
+                <select id="uVisaType">
+                    <option value="">-- Select Category --</option>
+                    <option value="Work Permit Visa">Work Permit Visa</option>
+                    <option value="Tourist Visa">Tourist Visa</option>
+                    <option value="Study Visa">Study Visa</option>
+                </select>
             </div>
-            <button class="check-btn" id="checkBtn">SERACH</button>
+            </div>
+            <button class="check-btn" id="checkBtn">SEARCH</button>
             <div id="errorDisplay" style="color:red; margin-top:10px; display:none; font-weight:bold;"></div>
         </div>
 
         <div id="statusResult">
             <div class="result-title">
-                <h3>NZeTA Found</h3>
+                <h3>Your NZeTA Status</h3>
             </div>
 
             <div class="result-row">
@@ -281,7 +295,7 @@
                 <div class="res-value" id="resPassport"></div>
             </div>
             <div class="result-row">
-                <div class="res-label">Application Status</div>
+                <div class="res-label">NZeTA Status</div>
                 <div class="res-value">
                     <span class="status-tag" id="resStatus">ISSUED</span>
                 </div>
@@ -289,6 +303,10 @@
             <div class="result-row">
                 <div class="res-label">Visa Category</div>
                 <div class="res-value" id="resVisa"></div>
+            </div>
+            <div class="result-row">
+                <div class="res-label">Passport Expiry</div>
+                <div class="res-" id="resexpiry"></div>
             </div>
 
 
