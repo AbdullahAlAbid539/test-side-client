@@ -43,19 +43,6 @@
             letter-spacing: 1px;
         }
 
-        /* Hero */
-        .hero-section {
-            background-color: white;
-            padding: 30px 10%;
-            border-bottom: 4px solid #ffcc00; /* সেই গোল্ডেন বর্ডার */
-            margin-bottom: 40px;
-        }
-
-        .hero-section h2 {
-            color: #002e5d;
-            margin: 0;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
 
         /* Main Container */
         .container {
@@ -203,6 +190,34 @@
             .container .check-btn{
                 margin-left: 100px;
             }
+            .footer-container{
+                max-width: 600px;
+                padding: 10px;
+            }
+            .footer-nav{
+                display: inline-block;
+                padding: 20px;
+            }
+            .hero-section {
+            padding: 5px;
+        }
+        
+        h1 {
+            font-size: 60px; /* বড় স্ক্রিনে বড় ফন্ট */
+        }
+        
+        .description {
+            font-size: 22px;
+        }
+        
+        .blue-bar {
+            width: 8px;
+            margin-right: 20px;
+        }
+        .hero-section .container{
+            margin-left: -50px;
+        }
+
 
         }
 
@@ -233,6 +248,139 @@
             gap: 10px;
             padding: 10px;
         }
+
+        .footer-container {
+            padding: 40px 30px;
+            background-color: #000000;
+            font-family: 'Open Sans', Arial, sans-serif;
+            color: #ffffff;
+            width: 100%;
+        }
+
+        /* উপরের লোগো সেকশন */
+        .logo-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .crest {
+            width: 50px;
+            margin-right: 12px;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ministry-title {
+            font-size: 14px;
+            font-weight: 800;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .maori-subtitle {
+            font-size: 11px;
+            margin-top: 4px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        /* New Zealand Government লেখা */
+        .nz-gov-brand {
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .nz-gov-brand span.line {
+            border-bottom: 1px solid #777; /* ছবির মতো হালকা আন্ডারলাইন */
+            padding-bottom: 1px;
+            margin-right: 4px;
+        }
+
+        /* সাদা ডিভাইডার লাইন */
+        .divider {
+            height: 1px;
+            background-color: #ffffff;
+            margin: 35px 0;
+            border: none;
+            opacity: 0.8;
+        }
+
+        /* মেনু লিঙ্ক */
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+
+        .footer-nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* নিচের কপিরাইট টেক্সট */
+        .copyright-info {
+            font-size: 15px;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+        }
+        .hero-section .container{
+            margin-left: 0px;
+            width: 100%;
+            background-color: white;
+        }
+
+        .hero-section .container{
+            h1 {
+            color: #343a40; /* ডার্ক গ্রে কালার */
+            font-size: 56px;
+            font-weight: 300; /* একদম পাতলা লুকের জন্য */
+            line-height: 1.1;
+            margin: 0 0 40px 0;
+            letter-spacing: -1px;
+        }
+
+        /* নীল রঙের ভার্টিক্যাল বার এবং টেক্সট সেকশন */
+        .info-box {
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 20px;
+        }
+
+        .blue-bar {
+            width: 8px;
+            background-color: #00b0e4; /* ছবির মতো নীল রঙ */
+            margin-right: 20px;
+        }
+
+        /* ইটালিক টেক্সট স্টাইল */
+        .description {
+            font-size: 20px;
+            color: #495057;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* নিচের হালকা গ্রে লাইন */
+        .bottom-line {
+            border-bottom: 1px solid #e9ecef;
+            margin-top: 30px;
+        }
+        }
     </style>
 </head>
 
@@ -244,8 +392,17 @@
     </div>
 
     <div class="hero-section">
-        <div style="max-width: 900px; margin: auto;">
-            <h2>Check your NZeTA status</h2>
+        <div class="container">
+        <h1>Check your<br>NZeTA<br>status</h1>
+
+        <div class="info-box">
+            <div class="blue-bar"></div>
+            <p class="description">
+                Use this form to check the status<br>
+                of your NZeTA.
+            </p>
+            <div class="bottom-line"></div>
+        </div>
         </div>
     </div>
 
@@ -538,11 +695,36 @@
             <p style="font-size:14px">Long term stay and residency status.</p>
         </div>
     </div>
-
-    <div class="footer">
-        &copy; 2026 Immigration New Zealand. Official Verification Portal.
+    <div class="footer-container">
+    <div class="logo-section">
+        <img src="pic/ministry-of-business-innovation-and-employment-153798-removebg-preview.png" alt="Crest" class="crest">
+        <div class="brand-text">
+            <div class="ministry-title">
+                MINISTRY OF BUSINESS,<br>
+                INNOVATION & EMPLOYMENT
+            </div>
+            <div class="maori-subtitle">HĪKINA WHAKATUTUKI</div>
+        </div>
     </div>
 
+    <div class="nz-gov-brand">
+        <span class="line">New Zealand</span> Government
+    </div>
+
+    <hr class="divider">
+
+    <nav class="footer-nav">
+        <a href="#">ACCESSIBILITY</a>
+        <a href="#">PRIVACY</a>
+        <a href="#">COPYRIGHT</a>
+        <a href="#">TERMS OF USE</a>
+        <a href="#">CONTACT US</a>
+    </nav>
+
+    <div class="copyright-info">
+        © 2026 IMMIGRATION NEW ZEALAND (20260317.2)
+    </div>
+</div>
     <script type="module" src="script.js"></script>
 
 </body>
