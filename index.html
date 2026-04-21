@@ -101,7 +101,7 @@
             background-color: #e4054c;
             color: white;
             padding: 15px;
-            width: 20%;
+            width: 40%;
             border: none;
             font-size: 18px;
             font-weight: bold;
@@ -200,6 +200,10 @@
             margin-left: 0px;
             }
             .visa-type { flex-direction: column; margin: 20px 5%; }
+            .container .check-btn{
+                margin-left: 100px;
+            }
+
         }
 
     .required-star {
@@ -224,6 +228,11 @@
         margin-bottom: 10px;
         margin-top: -20px;
     }
+    .dropdown{
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -268,7 +277,7 @@
                     <input type="email" id="uEmail">
                 </div>
                 <div class="form-group">
-                    <label>Visa Category</label>
+                    <label>Visa Category <span class="required-star">*</span><span class="question-mark">?</span></label>
                 <select id="uVisaType">
                     <option value="">-- Select Category --</option>
                     <option value="Work Permit Visa">Work Permit Visa</option>
@@ -276,6 +285,207 @@
                     <option value="Study Visa">Study Visa</option>
                 </select>
             </div>
+            <div class="dropdown-group">
+                <label>Select The expiry Date shown on your passport  <span class="required-star">*</span><span class="question-mark">?</span></label>
+                <div class="dropdown">
+                                    <select name="exp-date">
+                    <option>Day</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+
+                </select>
+                <select name="exp-mon">
+                    <option>Month</option>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>Aug</option>
+                    <option>Sep</option>
+                    <option>Oct</option>
+                    <option>Nov</option>
+                    <option>Dec</option>
+                </select>
+                <select name="exp-year">
+                    <option>Year</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                    <option>2030</option>
+                    <option>2031</option>
+                    <option>2032</option>
+                    <option>2033</option>
+                    <option>2034</option>
+                    <option>2035</option>
+                    <option>2037</option>
+                    <option>2038</option>
+                    <option>2039</option>
+                    <option>2040</option>
+                    <option>2041</option>
+                    <option>2042</option>
+                    <option>2043</option>
+                    <option>2044</option>
+                    <option>2045</option>
+                    <option>2046</option>
+                    <option>2047</option>
+                    <option>2048</option>
+                    <option>2049</option>
+                    <option>2050</option>
+                    <option>2051</option>
+                    <option>2052</option>
+                    <option>2053</option>
+                    <option>2055</option>
+                    <option>2056</option>
+                    <option>2057</option>
+                    <option>2058</option>
+                    <option>2059</option>
+                    <option>2060</option>
+                    <option>2061</option>
+                    <option>2062</option>
+                </select>
+                </div>
+            </div>
+            <div class="dropdown-group">
+                <label>Select Your Date of Birth shown on your passport  <span class="required-star">*</span><span class="question-mark">?</span></label>
+                <div class="dropdown">
+                                    <select name="exp-date">
+                    <option>Day</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+
+                </select>
+                <select name="exp-mon">
+                    <option>Month</option>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>Aug</option>
+                    <option>Sep</option>
+                    <option>Oct</option>
+                    <option>Nov</option>
+                    <option>Dec</option>
+                </select>
+                <select name="exp-year">
+                    <option>Year</option>
+                    <option>1972</option>
+                    <option>1973</option>
+                    <option>1974</option>
+                    <option>1975</option>
+                    <option>1976</option>
+                    <option>1977</option>
+                    <option>1978</option>
+                    <option>1979</option>
+                    <option>1980</option>
+                    <option>1981</option>
+                    <option>1982</option>
+                    <option>1983</option>
+                    <option>1984</option>
+                    <option>1985</option>
+                    <option>1986</option>
+                    <option>1987</option>
+                    <option>1988</option>
+                    <option>1989</option>
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                    <option>1995</option>
+                    <option>1996</option>
+                    <option>1997</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                </select>
+                </div>
+            </div>
+
             </div>
             <button class="check-btn" id="checkBtn">SEARCH</button>
             <div id="errorDisplay" style="color:red; margin-top:10px; display:none; font-weight:bold;"></div>
