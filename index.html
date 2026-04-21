@@ -59,34 +59,41 @@
 
         /* Main Container */
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 35px;
-            border-radius: 4px; /* অফিসিয়াল লুকের জন্য একটু শার্প কর্নার */
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9; /* Off-white container */
+            width: 100%;
+            max-width: 500px;
+            padding: 40px 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-radius: 2px;
+            align-items: center;
+            margin-left: 650px;
         }
 
         /* Form Elements */
         .form-group {
-            margin-bottom: 20px;
-            text-align: left;
+            margin-bottom: 45px;
+            position: center;
+            
         }
 
         label {
+            display: block;
+            font-size: 18px;
             font-weight: 700;
-            margin-bottom: 8px;
-            color: #222;
-            font-size: 14px;
+            color: #333;
+            line-height: 1.3;
+            padding-right: 30px; /* যাতে লেখা আইকনের গায়ে লেগে না যায় */
         }
 
         input, select {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #777;
-            border-radius: 2px;
-            font-size: 16px;
+            padding: 14px 12px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            background-color: #fff;
             box-sizing: border-box;
+            outline: none;
+            border-radius: 0; /* Boxy design */
         }
 
         /* Button */
@@ -198,17 +205,20 @@
     }
 
     .question-mark {
-    color: #00FFFF; /* Aqua text color */
-    border: 2px solid #00FFFF; /* Aqua border */
-    border-radius: 50%; /* Circle shape korar jonno */
-    width: 10px; /* Circle er width */
-    height: 10px; /* Circle er height */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px; /* Circle er bhetore text size */
-    font-weight: bold;
-    cursor: help;
+        color: #00a0d2;     /* ছবির মতো ব্লু কালার */
+        border: 1.5px solid #00a0d2;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: help;
+        text-decoration: none;
+        margin-bottom: 10px;
     }
     </style>
 </head>
